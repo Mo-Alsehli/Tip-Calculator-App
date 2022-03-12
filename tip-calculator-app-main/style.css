@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  font-family: "Space Mono", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  min-height: 80%;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.02), 0 8px 6px rgba(0, 0, 0, 0.03),
+    0 16px 10px rgba(0, 0, 0, 0.04), 0 26px 18px rgba(0, 0, 0, 0.05);
+}
+
+.split-one {
+  position: absolute;
+  top: 3rem;
+  margin: 10px auto;
+  text-transform: uppercase;
+  color: hsl(186, 14%, 43%);
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.split-two {
+  position: absolute;
+  top: 5rem;
+  margin: 10px auto;
+  text-transform: uppercase;
+  color: hsl(186, 14%, 43%);
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.calculator-wrapper {
+  width: 60%;
+  min-height: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  margin-bottom: -3rem;
+}
+
+.calculation {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(186, 14%, 43%);
+  margin-bottom: 5px;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.input {
+  padding: 7px;
+  margin-right: 5px;
+  background-color: hsl(189, 41%, 94%);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  color: hsl(183, 100%, 15%);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: right;
+  font-family: "Space Mono", sans-serif;
+}
+
+.input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.icon {
+  position: absolute;
+  top: 2.5rem;
+  left: 1rem;
+  color: hsl(185, 41%, 80%);
+}
+
+.calculation > label {
+  margin-top: 1.8rem;
+}
+
+.section-tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.tip-btn {
+  padding: 6px 0;
+  max-width: 5rem;
+  background-color: hsl(183, 100%, 15%);
+  color: #fff;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Space Mono", sans-serif;
+}
+
+.tip-btn:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.custom {
+  text-align: center;
+  border: transparent;
+  background-color: hsl(185, 41%, 80%);
+  max-width: 5rem;
+  padding: 5px;
+  border: transparent;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: "Space Mono", sans-serif;
+}
+
+.custom::-webkit-outer-spin-button,
+.custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.results {
+  background-color: hsl(183, 100%, 15%);
+  padding: 1rem;
+  border-radius: 8px;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.tip-amount-section {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.tip-amount-section div {
+  margin-right: 3rem;
+}
+
+.tip-amount-section div p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.tip-amount-section div span {
+  color: hsl(185, 41%, 80%);
+  font-size: 0.8rem;
+}
+
+#tip-amount,
+#tip-total {
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+  margin-top: -5px;
+  position: absolute;
+  right: 1.5rem;
+}
+
+.reset-btn {
+  width: 86%;
+  position: absolute;
+  bottom: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  border-radius: 5px;
+  border: transparent;
+  padding: 8px 0;
+  font-weight: bolder;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: hsl(185, 41%, 80%);
+}
